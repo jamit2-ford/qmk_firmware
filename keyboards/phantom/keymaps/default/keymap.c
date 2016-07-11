@@ -8,7 +8,7 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 #define BASE_LAYER 0
-#define FN0_LAYER 1
+#define FN1_LAYER 1
 #define COLEMAK_LAYER 2
 #define DVORAK_LAYER 3
 #define WORKMAN_LAYER 4
@@ -22,9 +22,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB,   KC_Q,     KC_W,     KC_E,    KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     KC_LBRC,  KC_RBRC,  KC_BSLS,  KC_DELETE,  KC_END,   KC_PGDN, \
          KC_LCTL,  KC_A,     KC_S,     KC_D,    KC_F,     KC_G,     KC_H,     KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_QUOT,  KC_ENT, \
          KC_LSFT,  KC_Z,     KC_X,     KC_C,    KC_V,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,                                  KC_UP, \
-         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN0_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
+         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN1_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
 
-  [FN0_LAYER] =
+  [FN1_LAYER] =
   KEYMAP(
          KC_TRNS,          KC_F16,  KC_F17,  KC_F18,      KC_F19,         KC_F20,  KC_F21,  KC_F22,  KC_F23,  KC_F24,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
          KC_TRNS, KC_A,    KC_B,    KC_C,    KC_D,        KC_E,           KC_F,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET,   KC_TRNS, KC_TRNS, KC_TRNS, \
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB,   KC_Q,     KC_W,     KC_F,    KC_P,     KC_G,     KC_J,     KC_L,     KC_U,     KC_Y,     KC_SCLN,  KC_LBRC,  KC_RBRC,  KC_BSLS,  KC_DELETE,  KC_END,   KC_PGDN, \
          KC_BSPC,  KC_A,     KC_R,     KC_S,    KC_T,     KC_D,     KC_H,     KC_N,     KC_E,     KC_I,     KC_O,     KC_QUOT,  KC_ENT, \
          KC_LSFT,  KC_Z,     KC_X,     KC_C,    KC_V,     KC_B,     KC_K,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,                                  KC_UP, \
-         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN0_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
+         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN1_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
 
   [DVORAK_LAYER] =
   KEYMAP(
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB,   KC_QUOT,  KC_COMM,  KC_DOT,  KC_P,     KC_Y,     KC_F,     KC_G,     KC_C,     KC_R,     KC_L,     KC_SLSH,  KC_EQL,   KC_BSLS,  KC_DELETE,  KC_END,   KC_PGDN, \
          KC_LCTL,  KC_A,     KC_O,     KC_E,    KC_U,     KC_I,     KC_D,     KC_H,     KC_T,     KC_N,     KC_S,     KC_MINS,  KC_ENT, \
          KC_LSFT,  KC_SCLN,  KC_Q,     KC_J,    KC_K,     KC_X,     KC_B,     KC_M,     KC_W,     KC_V,     KC_Z,     KC_RSFT,                                  KC_UP, \
-         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN0_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
+         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN1_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
 
   [WORKMAN_LAYER] =
   KEYMAP(
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB,   KC_Q,     KC_D,     KC_R,    KC_W,     KC_B,     KC_J,     KC_F,     KC_U,     KC_P,     KC_SCLN,  KC_LBRC,  KC_RBRC,  KC_BSLS,  KC_DELETE,  KC_END,   KC_PGDN, \
          KC_LCTL,  KC_A,     KC_S,     KC_H,    KC_T,     KC_G,     KC_Y,     KC_N,     KC_E,     KC_O,     KC_I,     KC_QUOT,  KC_ENT, \
          KC_LSFT,  KC_Z,     KC_X,     KC_M,    KC_C,     KC_V,     KC_K,     KC_L,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,                                  KC_UP, \
-         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN0_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
+         KC_LCTL,  KC_LALT,  KC_LGUI,                     KC_SPC,                                 KC_RGUI,  KC_RALT,  MO(FN1_LAYER), KC_RCTL,       KC_LEFT,    KC_DOWN,  KC_RGHT),
 
 
 };
