@@ -21,12 +21,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0003
-#define MANUFACTURER    PHANTOM
-#define PRODUCT         PHANTOM RGB MOD
-#define DESCRIPTION     QMK keyboard firmware for PHANTOM TKL
+#define VENDOR_ID       0xC0D0
+#define PRODUCT_ID      0xF00D
+#define DEVICE_VER      0x0001
+#define MANUFACTURER    OCODO
+#define PRODUCT         OCODO PHANTOM QMK
+#define DESCRIPTION     QMK keyboard firmware for OCODO PHANTOM TKL
 
 /* key matrix size */
 #define MATRIX_ROWS 6
