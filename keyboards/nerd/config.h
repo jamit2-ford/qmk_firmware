@@ -29,8 +29,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     QMK keyboard firmware for Nerd TKL
 
 /* key matrix size */
-#define MATRIX_ROWS 9
-#define MATRIX_COLS 10
+#define MATRIX_ROWS 10
+#define MATRIX_COLS 9
 
 // ROWS: Top to bottom, COLS: Left to right
 /* Row pin configuration
@@ -61,14 +61,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
-/* /\* Underlight configuration */
-/*  *\/ */
-/* #define RGB_DI_PIN B6 */
-/* #define RGBLIGHT_TIMER */
-/* #define RGBLED_NUM 20     // Number of LEDs */
-/* #define RGBLIGHT_HUE_STEP 10 */
-/* #define RGBLIGHT_SAT_STEP 17 */
-/* #define RGBLIGHT_VAL_STEP 17 */
+/* Underlight configuration
+ */
+#define RGB_DI_PIN B6
+#define RGBLIGHT_TIMER
+#define RGBLED_NUM 20     // Number of LEDs
+#define RGBLIGHT_HUE_STEP 10
+#define RGBLIGHT_SAT_STEP 17
+#define RGBLIGHT_VAL_STEP 17
 
 /*
  * Feature disable options
