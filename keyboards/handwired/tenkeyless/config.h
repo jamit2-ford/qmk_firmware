@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    ocodo
 #define PRODUCT         QMK tenkeyless-handwired
-#define DESCRIPTION     QMK tenkeyless-handwired 17x6 matrix keyboard
+#define DESCRIPTION     QMK tenkeyless-handwired 17x6 matrix keyboard (0002)
 
 /* key matrix size */
 #define MATRIX_ROWS 6
