@@ -11,7 +11,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL, KC_LALT, KC_LGUI,                                       KC_SPC,                             KC_RGUI, KC_RALT, MO(1),   KC_RCTL,      KC_LEFT, KC_DOWN, KC_RGHT),
   /* Layer 1: FN0 */
   KEYMAP_ANSI(\
-        KC_TRNS,          KC_TRNS, KC_TRNS,     KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,       KC_TRNS, KC_TRNS, KC_TRNS, \
+        KC_TRNS,          KC_TRNS, KC_TRNS,     KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,       KC_TRNS, KC_TRNS, RESET, \
         KC_TRNS,    KC_A,    KC_B,    KC_C,        KC_D,           KC_E,    KC_F, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, \
         KC_TRNS,    KC_7,    KC_8,    KC_9,  KC_KP_PLUS,    KC_KP_MINUS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, \
         KC_CAPS,    KC_4,    KC_5,    KC_6, KC_KP_SLASH, KC_KP_ASTERISK, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, \
