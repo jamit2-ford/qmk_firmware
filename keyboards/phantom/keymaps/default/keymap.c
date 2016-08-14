@@ -1,15 +1,15 @@
 #include "phantom.h"
 
 enum macro_id {
+  M_NOM,
   M_EML,
   M_GHB,
-  M_HTP,
-  M_NOM,
   M_PIV,
   M_PNM,
   M_PSG,
+  M_HTP,
   M_SSL,
-  M_VER,
+  M_VER
 };
 
 // Used for SHIFT_ESC
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Layer 1: FN0 */
   KEYMAP(\
-              M(M_VER),        M(M_NOM), M(M_EML),   M(M_GHB),       M(M_HTP),M(M_SSL), KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,       M(M_PNM),M(M_PIV),M(M_PSG), \
+              M(M_VER),        M(M_NOM), M(M_EML),   M(M_GHB),       M(M_HTP),M(M_SSL), KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,       M(M_PNM),M(M_PIV),M(M_VER), \
               KC_TRNS,    KC_A,    KC_B,    KC_C,        KC_D,           KC_E,    KC_F, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, \
               KC_TRNS,    KC_7,    KC_8,    KC_9,  KC_KP_PLUS,    KC_KP_MINUS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, \
               KC_CAPS,    KC_4,    KC_5,    KC_6, KC_KP_SLASH, KC_KP_ASTERISK, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, \
@@ -111,7 +111,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
     break;
   case M_EML:
     if (record->event.pressed) {
-      SEND_STRING("jasonm23@gmail.com");
+      SEND_STRING("@gmail.com");
     }
     break;
   case M_GHB:
