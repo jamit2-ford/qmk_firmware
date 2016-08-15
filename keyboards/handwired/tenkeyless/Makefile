@@ -1,4 +1,3 @@
-
 # MCU name
 MCU = atmega32u4
 
@@ -14,7 +13,6 @@ MCU = atmega32u4
 #     reflect the processor speed set externally so that the code can use accurate
 #     software delays.
 F_CPU = 16000000
-
 
 #
 # LUFA specific
@@ -38,15 +36,13 @@ F_USB = $(F_CPU)
 # Interrupt driven control endpoint task(+60)
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 
-
 # Boot Section Size in *bytes*
 #   Teensy halfKay   512
 #   Teensy++ halfKay 1024
 #   Atmel DFU loader 4096
 #   LUFA bootloader  4096
 #   USBaspLoader     2048
-OPT_DEFS += -DBOOTLOADER_SIZE=512
-
+OPT_DEFS += -DBOOTLOADER_SIZE=1024
 
 # Build Options
 #   change yes to no to disable
