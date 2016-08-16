@@ -42,7 +42,9 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 #   Atmel DFU loader 4096
 #   LUFA bootloader  4096
 #   USBaspLoader     2048
-OPT_DEFS += -DBOOTLOADER_SIZE=1024
+
+BOOTSIZE ?= 4096 # (use 2048 for genuine Teensy 2.0, default to 4096 for ebay teensy)
+OPT_DEFS += -DBOOTLOADER_SIZE=$(BOOTSIZE)
 
 # Build Options
 #   change yes to no to disable

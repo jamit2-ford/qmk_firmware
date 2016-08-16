@@ -36,6 +36,8 @@ void led_set(uint8_t usb_led);
 
 void led_init_ports(void);
 
+void led_layer_set(uint32_t state);
+
 #ifdef __cplusplus
 }
 #endif
