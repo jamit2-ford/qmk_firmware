@@ -3,7 +3,6 @@
 enum macro_id {
   M_NOM,
   M_EML,
-  M_EMAC,
   M_GHB,
   M_PIV,
   M_PNM,
@@ -149,11 +148,6 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
     if (record->event.pressed) {
       SEND_STRING(QMK_KEYBOARD "/" QMK_KEYMAP "@" QMK_VERSION "@" QMK_BUILDDATE);
     }
-    break;
-  case  M_EMAC:
-    // Launch emacs
-    // OSX only - assume launcher is activated with Gui+Space
-    return MACRODOWN(D(LGUI), T(SPC), U(LGUI), W(200), T(E), T(M), T(A), T(C), T(S), T(ENT), END);
     break;
   }
 
