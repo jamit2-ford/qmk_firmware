@@ -113,7 +113,9 @@ else
 	dfu-programmer $(MCU) erase
 endif
 	dfu-programmer $(MCU) flash $(BUILD_DIR)/$(TARGET).hex
+	@echo [Flashing Done] ...Resetting Device
 	dfu-programmer $(MCU) reset
+	@echo [Complete] ... Ready
 
 dfu-start:
 	dfu-programmer $(MCU) reset
