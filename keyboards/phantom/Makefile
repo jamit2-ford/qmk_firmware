@@ -45,7 +45,8 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 #   Atmel DFU loader 4096
 #   LUFA bootloader  4096
 #   USBaspLoader     2048
-OPT_DEFS += -DBOOTLOADER_SIZE=2048 # use 4096 for fake teensy
+BOOTSIZE ?= 2048
+OPT_DEFS += -DBOOTLOADER_SIZE=$(BOOTSIZE) # use 4096 for fake teensy
 
 # Build Options
 #   comment out to disable the options.
