@@ -13,14 +13,19 @@
 
  Features :
 
- - Caps      == Ctrl when held, Backspace when tapped (stolen idea from
+ - Caps       == Ctrl when held, Backspace when tapped (stolen idea from
                 Dvorak layout plus dual purpose keys) (Caps is on FN1 + Caps)
 
- - Return    == Return when tapped / Ctrl when held as modifier
+ - Return     == Return when tapped / Ctrl when held as modifier
 
- - Tab       == Tab when tapped / Alt when held as modifier
+ - Tab        == Tab when tapped / Alt when held as modifier
 
- - Backslash == Backslash when tapped / Alt when held as modifier
+ - Backslash  == Backslash when tapped / Alt when held as modifier
+
+ - Backtick   == Backtick (tap) / Gui/Cmd/Super when held as a modifier
+
+ - Backspace  == Backspace (tap) / Gui/Cmd/Super when held as a modifier
+
  */
 
 enum macro_id {
@@ -69,9 +74,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ╭────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬─────┬─────┬─────╮  ╭────┬────┬────╮
    │ ESC│ F1 │ F2 │ F3 │ F4 │ F5 │ F6 │ F7 │ F8 │ F9 │ F10 │ F11 │ F12 │  │PSCR│SLCK│PAUS│
    ├────┴────┼───┬┴──┬─┴─┬──┴┬───┼───┬┴──┬─┴─┬──┴┬───┼───┬─┴─┬───┴─────┤  ├────┼────┼────┤
-   │`        │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ─ │ = │ BACKSPC │  │ INS│HOME│PGUP│
+   │ GUI / ` │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ─ │ = │ GUI/BSPC│  │ INS│HOME│PGUP│
    ├─────────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼─────────┤  ├────┼────┼────┤
-   │ ALT/TAB │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │ [ │ ] │ALT/BSLS │  │ DEL│ END│PGDN│
+   │ ALT/TAB │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │ [ │ ] │ ALT/BSLS│  │ DEL│ END│PGDN│
    ├─────────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────────┤  ╰────┴────┴────╯
    │ CTL/BSPC │ A │ S │ D │ F │ G │ H │ J │ K │ L │ ; │ ' │  CTL/ENT   │
    ├──────────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴────────────┤       ╭────╮
@@ -156,7 +161,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ╭────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬─────┬─────┬─────╮  ╭────┬────┬────╮
    │ESC │ F1 │ F2 │ F3 │ F4 │ F5 │ F6 │ F7 │ F8 │ F9 │ F10 │ F11 │ F12 │  │PSCR│SLCK│PAUS│
    ├────┴────┼───┬┴──┬─┴─┬──┴┬───┼───┬┴──┬─┴─┬──┴┬───┼───┬─┴─┬───┴─────┤  ├────┼────┼────┤
-   │`        │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ - │ = │ BACKSPC │  │ INS│HOME│PGUP│
+   │ GUI / ` │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ - │ = │ GUI/BSPC│  │ INS│HOME│PGUP│
    ├─────────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼─────────┤  ├────┼────┼────┤
    │ ALT/TAB │ Q │ W │ F │ P │ G │ J │ L │ U │ Y │ ; │ [ │ ] │ ALT/BSLS│  │ DEL│ END│PGDN│
    ├─────────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────────┤  ╰────┴────┴────╯
@@ -179,7 +184,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ╭────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬─────┬─────┬─────╮  ╭────┬────┬────╮
    │ESC │ F1 │ F2 │ F3 │ F4 │ F5 │ F6 │ F7 │ F8 │ F9 │ F10 │ F11 │ F12 │  │PSCR│SLCK│PAUS│
    ├────┴────┼───┬┴──┬─┴─┬──┴┬───┼───┬┴──┬─┴─┬──┴┬───┼───┬─┴─┬───┴─────┤  ├────┼────┼────┤
-   │`        │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ [ │ ] │ BACKSPC │  │ INS│HOME│PGUP│
+   │ GUI / ` │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ [ │ ] │ GUI/BSPC│  │ INS│HOME│PGUP│
    ├─────────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼─────────┤  ├────┼────┼────┤
    │ ALT/TAB │ ' │ , │ . │ P │ Y │ F │ G │ C │ R │ L │ / │ ─ │ ALT/BSLS│  │ DEL│ END│PGDN│
    ├─────────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────────┤  ╰────┴────┴────╯
@@ -202,7 +207,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ╭────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬─────┬─────┬─────╮  ╭────┬────┬────╮
    │ESC │ F1 │ F2 │ F3 │ F4 │ F5 │ F6 │ F7 │ F8 │ F9 │ F10 │ F11 │ F12 │  │PSCR│SLCK│PAUS│
    ├────┴────┼───┬┴──┬─┴─┬──┴┬───┼───┬┴──┬─┴─┬──┴┬───┼───┬─┴─┬───┴─────┤  ├────┼────┼────┤
-   │`        │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ─ │ = │ BACKSPC │  │ INS│HOME│PGUP│
+   │ GUI / ` │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ─ │ = │ GUI/BSPC│  │ INS│HOME│PGUP│
    ├─────────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼─────────┤  ├────┼────┼────┤
    │ ALT/TAB │ Q │ D │ R │ W │ B │ J │ F │ U │ P │ ; │ [ │ ] │ ALT/BSLS│  │ DEL│ END│PGDN│
    ├─────────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────────┤  ╰────┴────┴────╯

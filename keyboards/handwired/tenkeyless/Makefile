@@ -44,7 +44,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 #   LUFA bootloader  4096
 #   USBaspLoader     2048
 
-BOOTSIZE ?= 4096 # (use 2048 for genuine Teensy 2.0, default to 4096 for ebay teensy)
+BOOTSIZE ?= 2048 # (use 2048 for genuine Teensy 2.0, default to 4096 for ebay teensy)
 OPT_DEFS += -DBOOTLOADER_SIZE=$(BOOTSIZE)
 
 # Build Options
