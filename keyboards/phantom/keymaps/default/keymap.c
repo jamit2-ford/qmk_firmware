@@ -26,6 +26,8 @@
 
  - Backspace  == Backspace (tap) / Gui/Cmd/Super when held as a modifier
 
+ - Space      == Space (tap) / Ctrl when held as a modifier
+
  */
 
 enum macro_id {
