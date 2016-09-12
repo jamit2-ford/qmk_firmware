@@ -42,9 +42,6 @@ enum macro_id {
   M_VER
 };
 
-// Used for SHIFT_ESC
-#define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
-
 // Ctrl or Backspace
 #define CTLBSPC MT(MOD_LCTL, KC_BSPC)
 
