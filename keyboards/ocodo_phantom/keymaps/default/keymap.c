@@ -42,26 +42,21 @@ enum macro_id {
   M_VER
 };
 
-// Ctrl or Backspace
-#define CTLBSPC MT(MOD_LCTL, KC_BSPC)
+/* #define CTLBSPC MT(MOD_LCTL, KC_BSPC) */
+/* #define CTLENTR MT(MOD_LCTL, KC_ENT) */
+/* #define ALTTAB MT(MOD_LALT, KC_TAB) */
+/* #define ALTBSLS MT(MOD_LALT, KC_BSLS) */
+/* #define GUITLD MT(MOD_LGUI, KC_GRV) */
+/* #define GUIBSPC MT(MOD_LGUI, KC_BSPC) */
+/* #define CTLSPC MT(MOD_LCTL, KC_SPC) */
 
-// Ctrl or Return
-#define CTLENTR MT(MOD_LCTL, KC_ENT)
-
-// Alt or Tab
-#define ALTTAB MT(MOD_LALT, KC_TAB)
-
-// Alt or Backslash
-#define ALTBSLS MT(MOD_LALT, KC_BSLS)
-
-// GUI or Tilde
-#define GUITLD MT(MOD_LGUI, KC_GRV)
-
-// GUI or Backspace
-#define GUIBSPC MT(MOD_LGUI, KC_BSPC)
-
-// Ctrl or Space
-#define CTLSPC MT(MOD_LCTL, KC_SPC)
+#define CTLBSPC KC_BSPC
+#define CTLENTR KC_ENT
+#define ALTTAB KC_TAB
+#define ALTBSLS KC_BSLS
+#define GUITLD KC_GRV
+#define GUIBSPC KC_BSPC
+#define CTLSPC KC_SPC
 
 // Numpad short cuts
 #define N_PLUS KC_KP_PLUS
