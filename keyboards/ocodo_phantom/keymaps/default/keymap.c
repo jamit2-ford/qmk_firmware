@@ -42,21 +42,21 @@ enum macro_id {
   M_VER
 };
 
-/* #define __CPLK_ MT(MOD_LCTL, KC_BSPC) */
-/* #define __ENT__ MT(MOD_LCTL, KC_ENT) */
-/* #define __TAB__ MT(MOD_LALT, KC_TAB) */
-/* #define __BSLS_ MT(MOD_LALT, KC_BSLS) */
-/* #define __GRV__ MT(MOD_LGUI, KC_GRV) */
-/* #define __BSP__ MT(MOD_LGUI, KC_BSPC) */
-/* #define __SPC__ MT(MOD_LCTL, KC_SPC) */
+#define __CPLK_ MT(MOD_LCTL, KC_BSPC)
+#define __ENT__ MT(MOD_LCTL, KC_ENT)
+#define __TAB__ MT(MOD_LALT, KC_TAB)
+#define __BSLS_ MT(MOD_LALT, KC_BSLS)
+#define __GRV__ MT(MOD_LGUI, KC_GRV)
+#define __BSP__ MT(MOD_LGUI, KC_BSPC)
+#define __SPC__ MT(MOD_LCTL, KC_SPC)
 
-#define __CPLK_ KC_LCTL
-#define __ENT__ KC_ENT
-#define __TAB__ KC_TAB
-#define __BSLS_ KC_BSLS
-#define __GRV__ KC_GRV
-#define __BSP__ KC_BSPC
-#define __SPC__ KC_SPC
+/* #define __CPLK_ KC_LCTL */
+/* #define __ENT__ KC_ENT */
+/* #define __TAB__ KC_TAB */
+/* #define __BSLS_ KC_BSLS */
+/* #define __GRV__ KC_GRV */
+/* #define __BSP__ KC_BSPC */
+/* #define __SPC__ KC_SPC */
 
 // Numpad short cuts
 #define N_PLUS KC_KP_PLUS
